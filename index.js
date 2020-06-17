@@ -26,5 +26,11 @@ class Triangle extends Polygon{
 
 
 class Square extends Polygon{
-  get 
+  get isValid(){
+    if( this.array.length ===4)
+    return true
+    else{
+      return false
+    }
+  }
 }
