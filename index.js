@@ -1,1 +1,25 @@
 // Your code here
+class Polygon{
+  constructor(arr){
+    this.array=arr;
+  }
+  get countSides(){
+   return this.array.reduce( (acc) => acc+1 , 0)
+  }
+  get perimeter(){
+    return this.array.reduce((acc,val) => {
+      return acc+val
+    },0)
+  }
+}
+class Triangle extends Polygon{
+  
+  get isValid(){
+    if(this.array.length === 3)
+    return true
+  
+     else {
+    return false;
+  }
+  }
+}
